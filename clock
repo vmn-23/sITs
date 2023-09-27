@@ -1,0 +1,18 @@
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        int a = in.nextInt();
+        int c = (a/3600)%24;
+        int d = (a%3600)/60;
+        int b = a%60;
+        int d3 = d/10;
+        int b3 = b/10;
+        int c2 = (int) (c / (c - 0.1));
+        int d2 = (int) (d3 / (d3 - 0.1));
+        int b2 = (int) (b3 / (b3 - 0.1));
+        var d1 = "0".repeat(1-d2);
+        var b1 = "0".repeat(1-b2);
+        System.out.println(String.valueOf(c) + ":" + d1 + String.valueOf(d)+ ":" + b1 + String.valueOf(b));
+    }
+}
