@@ -1,3 +1,29 @@
+//1.5(1)
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        in.useLocale(Locale.US);
+        double x = in.nextDouble();
+        double y = in.nextDouble();
+        System.out.println ((x*x+y*y>2)&&(x<2)&&(y<x)&&(y>0)? "YES": "NO");
+    }
+}
+//1.5(2)
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        in.useLocale(Locale.US);
+        double x = in.nextDouble();
+        double y = in.nextDouble();
+        double s = Math.sin(x);
+        System.out.println ((y<s)&&(y>0)&&(y<0.5)&&(x<Math.PI)&&(x>0)? "YES": "NO");
+    }
+}
+//1.5(3)
 import java.util.*;
 
 public class Main {
@@ -8,5 +34,190 @@ public class Main {
         double y = in.nextDouble();
         double s = 2-x*x;
         System.out.println ((y<s)&&((y>x)||(y>0)&&(x>0))? "YES": "NO");
+    }
+}
+//1.5(4)
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        in.useLocale(Locale.US);
+        double x = in.nextDouble();
+        double y = in.nextDouble();
+        double s = x*x-2;
+        System.out.println ((y>s)&&((y<x)||(y<-x))? "YES": "NO");
+    }
+}
+//1.5(5)
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        in.useLocale(Locale.US);
+        double x = in.nextDouble();
+        double y = in.nextDouble();
+        double s = x*x+y*y;
+        System.out.println ((s<1)&&((x<0)||(y>x))? "YES": "NO");
+    }
+}
+//1.5(6)
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        in.useLocale(Locale.US);
+        double x = in.nextDouble();
+        double y = in.nextDouble();
+        double s = x*x+y*y;
+        System.out.println ((s<1)&&((y>-x)||(y<x))? "YES": "NO");
+    }
+}
+//1.5(7)
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        in.useLocale(Locale.US);
+        double x = in.nextDouble();
+        double y = in.nextDouble();
+        double s = 2*x*x;
+        System.out.println ((y>1-x)&&(x<1)&&((y>s)||((y<s)&&(y>0)&&(x>0)))? "YES": "NO");
+    }
+}
+//1.5(8)
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        in.useLocale(Locale.US);
+        double x = in.nextDouble();
+        double y = in.nextDouble();
+        double s = y*y+x*x;
+        System.out.println (((y<x-1)&&(s<1))||((y<1)&&(x>0)&&(y>x-1))? "YES": "NO");
+    }
+}
+//1.5(9)
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        in.useLocale(Locale.US);
+        double x = in.nextDouble();
+        double y = in.nextDouble();
+        double s = y*y+x*x;
+        System.out.println ((s<1)||((s>1)&&(x<1)&&(y<1)&&(y>0)&&(x>0))? "YES": "NO");
+    }
+}
+//1.6(1)
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        int a = in.nextInt();
+        if (a > -1 && a < 10){
+            System.out.println("DIGIT");
+        }
+        else{
+            if (a > 9 && a < 100){
+                System.out.println("NUM");
+            }
+            else{
+                System.out.println("OTHER");
+            }
+        }
+    }
+}
+//1.6(2)
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        int a = in.nextInt();
+        int b = in.nextInt();
+        int c = in.nextInt();
+        if (a > b && a > c){
+            if (b >c){
+                System.out.println(c+" "+b+" "+a);
+            }
+            else{
+                System.out.println(b+" "+c+" "+a);
+            }
+        }
+        else{
+            if (a < b && a < c){
+                if (b > c){
+                    System.out.println(a+" "+c+" "+b);
+                }
+                else{
+                    System.out.println(a+" "+b+" "+c);
+                }
+            }
+            else{
+                if (b > c){
+                    System.out.println(c+" "+a+" "+b);
+                }
+                else{
+                    System.out.println(b+" "+a+" "+c);
+                }
+            }
+        }
+    }
+}
+//1.6(3)
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        int a = in.nextInt();
+        if ((a % 100) > 10 && (a % 100) < 15){
+            System.out.println(a + " TORTOV");
+        }
+        else{
+            if (a % 10 == 1){
+                System.out.println(a + " TORT");
+            }
+            if ((a % 10) > 1 && (a % 10) < 5){
+                System.out.println(a + " TORTA");
+            }
+            if ((a % 10) > 4 || (a % 10) == 0){
+                System.out.println(a + " TORTOV");
+            }
+        }
+    }
+}
+//1.6(4)
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        double a = in.nextInt();
+        double c = in.nextInt();
+        double b = - c;
+        if (((a <= 0) && (b >= 0))){
+            System.out.println("no such x");
+        }
+        else{
+            if ((a < 0) && (b < 0)){
+                double d = b/a+(0.1-(b/a)%0.1)%0.1;
+                System.out.println(-d+"<x<"+(d));
+            }
+            if ((a >= 0) && (b < 0)){
+                System.out.println("any x");
+            }
+            if ((a > 0) && (b > 0)){
+                double d = b/a+(0.1-(b/a)%0.1)%0.1;
+                System.out.println("x<"+(-d)+" or x>"+(d));
+            }
+        }
     }
 }
