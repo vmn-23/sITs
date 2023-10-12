@@ -22,7 +22,7 @@ public class Main {
     }
     public static char[] task1(char n[], int a){
         for (int i = 0; i < n.length; i++){
-            n[i] = (char) (n[i] + a);
+            n[i] = (char) (65*((n[i] + a)/122)+(n[i] + a)%122);
         }
         return n;
     }
@@ -59,7 +59,7 @@ public class Main {
 
     public static char[] task1(char n[], int a){
         for (int i = 0; i < n.length; i++){
-            n[i] = (char) (n[i] + a);
+            n[i] = (char) (65*((n[i] + a)/122)+(n[i] + a)%122);
         }
         return n;
     }
