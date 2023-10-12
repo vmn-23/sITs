@@ -1,1 +1,29 @@
+package cw.samsung.com;
+
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        String s = in.nextLine();
+        char[] n = s.toCharArray();
+        char input = 'a';
+        char[] n1 = new char[(n.length+1)/2];
+        for (int j = 0; j < n1.length; j++){
+            n1[j] = n[2*j];
+        }
+        int a = in.nextInt();
+        char[] n2 = task1(n1, a);
+        for (int k = 0; k < n2.length; k++){
+            System.out.print(n2[k]+" ");
+        }
+
+    }
+    public static char[] task1(char n[], int a){
+        for (int i = 0; i < n.length; i++){
+            n[i] = (char) (n[i] + a);
+        }
+        return n;
+    }
+}
 
