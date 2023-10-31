@@ -1,10 +1,12 @@
 package cw.samsung.com;
+
 import cw.samsung.com.Person;
 import cw.samsung.com.Student;
+
 import java.util.*;
 
-public class Main{
-    public static void main(String[] args){
+public class Main {
+    public static void main(String[] args) {
         Unit unit = new Unit("X", 18);
         Unit unit1 = new Unit(unit);
         unit1.cure();
@@ -14,7 +16,7 @@ public class Main{
         Mage mage = new Mage("X", 18, 200);
         Mage mage1 = new Mage(mage);
         mage.printInfo();
-        mage1.GiftIsFound();
+        mage1.giftIsFound();
         mage.printInfo();
         mage1.printInfo();
 

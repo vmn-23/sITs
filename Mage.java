@@ -1,26 +1,28 @@
 package cw.samsung.com;
 
-public class Mage extends Unit{
-    private String name;
-    private int health;
+public class Mage extends Unit {
     private int mana;
-    public Mage(String name, int health, int mana){
+
+    public Mage(String name, int health, int mana) {
         super(name, health);
         if (mana > 0) {
             this.mana = mana;
-        }else{
+        } else {
             this.mana = 0;
         }
     }
-    public Mage(Mage mage){
+
+    public Mage(Mage mage) {
         this(mage.name, mage.health, mage.mana);
     }
-    public int GiftIsFound(){
+
+    public int giftIsFound() {
         mana += 200;
         return mana;
     }
+
     @Override
-    public void printInfo(){
+    public void printInfo() {
         super.printInfo();
         System.out.println("Mana : " + mana);
     }
